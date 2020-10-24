@@ -15,47 +15,47 @@ def open_img():
         img = Image.open("one.jpg")  # open image
         img = img.resize((250, 250), Image.ANTIALIAS)  # resize to make all images a similar size
         img = ImageTk.PhotoImage(img)  # convert to ImageTk object which supports jpg, png etc.
-        panel['image'] = img # assign to image panel in frame
-        panel.image = img #
-        panel.pack()
+        dice_face['image'] = img # assign to image dice_face in frame
+        dice_face.image = img #
+        dice_face.pack()
     if throw == 2:
         img = Image.open("two.png")
         img = img.resize((250, 250), Image.ANTIALIAS)
         img = ImageTk.PhotoImage(img)
-        panel['image'] = img
-        panel.image = img
-        panel.pack()
+        dice_face['image'] = img
+        dice_face.image = img
+        dice_face.pack()
     if throw == 3:
         img = Image.open("three.png")
         img = img.resize((250, 250), Image.ANTIALIAS)
         img = ImageTk.PhotoImage(img)
-        panel['image'] = img
-        panel.image = img
-        panel.pack()
+        dice_face['image'] = img
+        dice_face.image = img
+        dice_face.pack()
     if throw == 4:
         img = Image.open("four.png")
         img = img.resize((250, 250), Image.ANTIALIAS)
         img = ImageTk.PhotoImage(img)
-        panel['image'] = img
-        panel.image = img
-        panel.pack()
+        dice_face['image'] = img
+        dice_face.image = img
+        dice_face.pack()
     if throw == 5:
         img = Image.open("five.png")
         img = img.resize((250, 250), Image.ANTIALIAS)
         img = ImageTk.PhotoImage(img)
-        panel['image'] = img
-        panel.image = img
-        panel.pack()
+        dice_face['image'] = img
+        dice_face.image = img
+        dice_face.pack()
     if throw == 6:
         img = Image.open("6.png")
         img = img.resize((250, 250), Image.ANTIALIAS)
         img = ImageTk.PhotoImage(img)
-        panel['image'] = img
-        panel.image = img
-        panel.pack()
+        dice_face['image'] = img
+        dice_face.image = img
+        dice_face.pack()
 
 
-panel = Label(root)
+dice_face = Label(root)
 btn = Button(root, text='Throw Dice', command=open_img).pack()
 
 root.mainloop()
